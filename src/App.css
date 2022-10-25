@@ -1,38 +1,139 @@
+/* first page  */
+body {
+  background-color: black;
+}
+
+h1{
+  font-family: 'Sora', sans-serif;
+  font-size: 40px;
+  color: #ECDBBA;
+}
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #2B2B2B;
+  margin: 10px;
+}
+
+.block {
+  display: flex;
+}
+
+.listToRead {
+  width: 30%;
+  margin: 10px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #2D2424;
+}
+
+.books {
+  display: flex;
+  background-color: #2B2B2B;
+  width: 70%;
+  margin: 10px;
+
+}
+
+
+/* books  */
+
+.displayBooks{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around
+}
+
+.bookCover {
+  width: 180px;
+}
+
+.bookDiscriptions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 15px;
+  background-color: #2D2424;
+  font-family: 'Sora', sans-serif;
   color: white;
+  width: 230px;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.bookName {
+  margin-bottom: 8px;
+  font-family: 'Sora', sans-serif;
+  color: #ECDBBA;
+  font-size: 21px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bookAuthor {
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-family: 'Sora', sans-serif;
+  color: #E0C097;
 }
+/* other */
+
+.buttonsGenre {
+  margin: 10px;
+  font-family: 'Sora', sans-serif;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.wantToRead {
+  font-family: 'Sora', sans-serif;
+  border: none;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.wantToRead:hover {
+  background-color: #E7AB79;
+  transition-duration: 1s;
+}
+
+.selected {
+  background-color: #E7AB79;
+}
+
+.categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.allCategories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+}
+
+.delete {
+  height: 20px;
+  margin-left: 10px;
+}
+
+.list {
+  color: #ECDBBA;
+  font-size: 14px;
+}
+
+h3 {
+  color: #ECDBBA;
+  align-items: center;
+}
+
